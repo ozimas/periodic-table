@@ -1,7 +1,14 @@
 import React from "react";
 import Element from "./Element";
+import data from "../backend/data.json";
 
 class TablePeriodic extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      elements: data
+    };
+  }
   render() {
     return (
       <div className="table__periodic">
