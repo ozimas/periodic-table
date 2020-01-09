@@ -8,11 +8,17 @@ class TablePeriodic extends React.Component {
     this.state = {
       elements: data
     };
+    this.createElements = this.createElements.bind(this);
+  }
+  createElements() {
+    return this.state.elements.map((elem) => {
+        return <Element id={elem.atomic_number} symbol={elem.shortcut} name={elem.name} atomicMass={elem.atom_mass} />
+    })
   }
   render() {
     return (
       <div className="table__periodic">
-        <Element id="1" symbol="h" name="wodór" atomicMass="1.05" />
+          { this.createElements() }
       </div>
     );
   }
