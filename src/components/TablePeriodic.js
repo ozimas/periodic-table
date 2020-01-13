@@ -18,7 +18,7 @@ class TablePeriodic extends React.Component {
     })
   }
   createElement(elem) {
-    return <Element id={elem.atomic_number} symbol={elem.shortcut} name={elem.name} atomicMass={elem.atom_mass} />
+    return <Element id={elem.atomic_number} symbol={elem.shortcut} name={elem.name} atomicMass={elem.atom_mass} key={elem.atomic_number}/>
   }
   createElementsEmpty(count){
     let result = [];
@@ -28,7 +28,7 @@ class TablePeriodic extends React.Component {
     return result;
   }
   createElementEmpty(number){
-    return <ElementEmpty num={number}/>
+    return <ElementEmpty num={number} key={number}/>
   }
   render() {
     return (
