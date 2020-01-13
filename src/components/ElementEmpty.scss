@@ -1,0 +1,81 @@
+.element__empty {
+    &.empty--1 {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 18;
+    }
+
+    &.empty--2 {
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-column-end: 13;
+    }
+
+    &.empty--3 {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 13;
+    }
+
+    &.empty--4 {
+        grid-row-start: 6;
+        grid-column-start: 3;
+        align-self: center;
+        text-align: center;
+
+        &:before {
+            content: '*';
+            color: white;
+            font-size: 14px;
+        }
+    }
+
+    &.empty--5 {
+        grid-row-start: 7;
+        grid-column-start: 3;
+        align-self: center;
+        text-align: center;
+
+        &:before {
+            content: '**';
+            color: white;
+            font-size: 14px;
+        }
+    }
+
+    &.empty--6 {
+        grid-row-start: 8;
+        grid-column-start: 1;
+        grid-column-end: 19;
+    }
+
+    &.empty--7 {
+        grid-row-start: 9;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-self: center;
+        text-align: right;
+        margin-right: 20px;
+
+        &:before {
+            content: '* Lantanowce';
+            color: white;
+            font-size: 12px;
+        }
+    }
+
+    &.empty--8 {
+        grid-row-start: 10;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-self: center;
+        text-align: right;
+        margin-right: 20px;
+
+        &:before {
+            content: '** Aktynowce';
+            color: white;
+            font-size: 12px;
+        }
+    }
+}
